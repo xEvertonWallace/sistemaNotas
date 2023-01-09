@@ -25,3 +25,9 @@ def ordenarNome(qtdAlunos):
     for i in range(qtdAlunos):     
         ordenar = sorted(dados, key=lambda row: row['nome']) # função anonima que filtra as linhas da chave nome.  
         print(ordenar[i])
+
+#função para ordernar as notas do aluno em ordem crescente.
+def ordenarNota(qtdAlunos):
+    for i in range(qtdAlunos):
+        ordenar = sorted(dados, key=lambda row: row['nota'])
+        print(ordenar[i])
