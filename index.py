@@ -79,4 +79,14 @@ def maiorNota(qtdAlunos):
         maiorNota = max(notas) #verifica a maior nota e armazena na variavel maiorNota
     for i in range(qtdAlunos):
         if notas[i] == maiorNota: #faz uma verificação da nota cpm so dados do aluno e printa as informações do aluno juntamente com a nota
-            print(dados[i]) 
+            print(dados[i])
+#função que apresenta a maior nota
+def menorNota(qtdAlunos):
+    notas = list()
+    for i in range(qtdAlunos):
+        nota = dados[i]['nota']
+        notas.append(nota)
+        menorNota = min(notas) #verifica a menor nota e armazena na variavel menorNota
+    for i in range(qtdAlunos):
+        if notas[i] == menorNota: #faz uma verificação da nota com so dados do aluno e printa as informações do aluno juntamente com a nota
+            print(dados[i])
