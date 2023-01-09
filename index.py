@@ -90,3 +90,11 @@ def menorNota(qtdAlunos):
     for i in range(qtdAlunos):
         if notas[i] == menorNota: #faz uma verificação da nota com so dados do aluno e printa as informações do aluno juntamente com a nota
             print(dados[i])
+
+#função para calcular a media da turma
+def mediaTurma(qtdAlunos):
+    nota = 0
+    for i in range(qtdAlunos):
+        nota += dados[i]['nota']
+    media = (nota/qtdAlunos)
+    print(f'A média da turma é: {media:,.2f}')
