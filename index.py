@@ -69,3 +69,14 @@ def maiorFrequencia(qtdAlunos):
         ordem.append(nota)
         res = max(set(ordem), key=ordem.count)#verifica as notas que mais se repetem e utiliza o metodo set para armazenar apenas uma dessas notas.
     print("A nota com maior frequencia é: " + str(res))
+
+#função que apresenta a maior nota
+def maiorNota(qtdAlunos):
+    notas = list()
+    for i in range(qtdAlunos):
+        nota = dados[i]['nota']
+        notas.append(nota)
+        maiorNota = max(notas) #verifica a maior nota e armazena na variavel maiorNota
+    for i in range(qtdAlunos):
+        if notas[i] == maiorNota: #faz uma verificação da nota cpm so dados do aluno e printa as informações do aluno juntamente com a nota
+            print(dados[i]) 
