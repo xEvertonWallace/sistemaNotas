@@ -39,3 +39,12 @@ def ordemMaior7(qtdAlunos):
         if ordenar[i]['nota'] >= 7:
             aux = ordenar[i]
             print(aux)
+
+#função para ordenar as notas dos alunos aprovados em ordem decrescente.
+def ordemMenor7(qtdAlunos):
+    ordenar = sorted(dados, key=lambda row: row['nota'], reverse=True)
+    for i in range(qtdAlunos):
+        if ordenar[i]['nota'] < 7:
+            aux = ordenar[i]
+            print(aux)
+
