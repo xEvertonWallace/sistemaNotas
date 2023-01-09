@@ -116,3 +116,26 @@ while loop == 1:
         '======================================================================================================================================================')
     opcao = int(input())
     print('\n')
+#estrtura de condição para saber qual função deve ser apresentada na tela
+    if opcao == 1:
+        ordenar = ordenarNome(qtdAlunos)
+    if opcao == 2:
+        ordenar = ordenarNota(qtdAlunos)
+    if opcao == 3:
+        ordenar = ordemMaior7(qtdAlunos)
+    if opcao == 4:
+        ordenar = ordemMenor7(qtdAlunos)
+    if opcao == 5:
+        aprovacao = percentualAprovacao(qtdAlunos)
+    if opcao == 6:
+        frequencia = maiorFrequencia(qtdAlunos)
+    if opcao == 7:
+        maior = maiorNota(qtdAlunos)
+    if opcao == 8:
+        menor = menorNota(qtdAlunos)
+    if opcao == 9:
+        media = mediaTurma(qtdAlunos)
+    print('\n')
+    print('Deseja voltar para o menu? Digite 1 para SIM e 0 para NÃO')
+    loop = int(input())
+    print('\n')
