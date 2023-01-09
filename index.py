@@ -60,3 +60,12 @@ def percentualAprovacao(qtdAlunos):
             cont += 1
     percent = (aprovado/cont)*100
     print(f'O percentual de aprovação é {percent:,.2f}%')
+
+#função que apresenta a nota com maior frenquencia
+def maiorFrequencia(qtdAlunos):
+    ordem = list()
+    for i in range(qtdAlunos):
+        nota = dados[i]['nota']
+        ordem.append(nota)
+        res = max(set(ordem), key=ordem.count)#verifica as notas que mais se repetem e utiliza o metodo set para armazenar apenas uma dessas notas.
+    print("A nota com maior frequencia é: " + str(res))
