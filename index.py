@@ -20,6 +20,8 @@ def calcularNota(resp, gaba):
             nota += 1
     return nota
 
+info = infoAlunos(qtdAlunos, gabarito)
+
 #função para ordenar os alunos em ordem alfabética
 def ordenarNome(qtdAlunos):
     for i in range(qtdAlunos):     
