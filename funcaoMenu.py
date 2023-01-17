@@ -1,4 +1,3 @@
-
 def menu():
         print('=' * 72, 'Menu', '=' * 75)
         print('|', ' ' *149, '|')
@@ -13,5 +12,5 @@ def menu():
         print('| Digite 8 para ver o aluno com a menor nota (nome, matricula e nota).', ' '*80,'|\n|',' ' *149, '|')
         print('| Digite 9 para ver a media da turma.', ' '*113,'|\n|',' ' *149, '|')
         print('=' * 153)
-        return
+        
       

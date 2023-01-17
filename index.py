@@ -1,5 +1,5 @@
 import funcoes as fn
-import texto as txt
+import funcaoMenu as main
 
 gabarito = input('Digite o gabarito da prova: ').lower()
 qtdAlunos = int(input('Digite a quantidade de alunos: '))
@@ -8,7 +8,7 @@ info = fn.infoAlunos(qtdAlunos, gabarito)
 #Menu: 
 loop = 'sim'
 while loop == 'sim':
-    txt.menu()
+    main.menu()
     opcao = int(input())
     print('\n')
 #estrutura de condição para saber qual função deve ser apresentada na tela
