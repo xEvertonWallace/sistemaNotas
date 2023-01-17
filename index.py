@@ -8,10 +8,10 @@ info = fn.infoAlunos(qtdAlunos, gabarito)
 #Menu: 
 loop = 'sim'
 while loop == 'sim':
-    print(txt.menu)
+    txt.menu()
     opcao = int(input())
     print('\n')
-#estrtura de condição para saber qual função deve ser apresentada na tela
+#estrutura de condição para saber qual função deve ser apresentada na tela
     if opcao == 1:
         ordenar = fn.ordenarNome(qtdAlunos)
     if opcao == 2:
