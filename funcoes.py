@@ -1,22 +1,38 @@
+import leituraGabarito as ltg
 dados = list()
 
+# funcao que irá calcular a notas: 
+def calcularNota(resp, gaba, csv): 
+    nota = 0 
+    if csv == 'N': 
+        for x in range(len(gaba)): 
+            if resp[x] == gaba[x]: 
+                nota += 1 
+        return nota 
+    else: 
+        for x in range(len(gaba)): 
+            if resp[x] == gaba[x]: 
+                nota += 1 
+        return nota 
 #função para receber as informaçoes do aluno e enviar para a lista.   
 def infoAlunos(qtdAlunos, gabarito):
     for i in range(qtdAlunos):
         matricula = int(input('Matricula do Aluno: '))
         nome = str(input('Nome do aluno: ').lower())
         resp = str(input('Resposta do aluno: ').lower())
-        nota = calcularNota(resp, gabarito)
+        nota = calcularNota(resp, gabarito, csv = 'N')
         dados.append({'nome': nome, 'matricula': matricula, 'nota': nota})
 
-#função para calcular quantas questões o aluno acertou
-
-def calcularNota(resp, gaba):
-    nota = 0
-    for x in range(len(gaba)):
-        if resp[x] == gaba[x]:
-            nota += 1
-    return nota
+# funcao que irá receber as informações dos estudantes a partir do csv: 
+def infoAlunosCSV(): 
+    for i in open('respostas.csv', 'r'): 
+        aux = i.split(';') 
+        matricula = aux[0][10:] 
+        nome = aux[1][5:] 
+        resps = aux[2][10:]
+        nota = calcularNota(resp=resps, gaba=ltg.gabarito, csv='S') 
+        dados.append({'nome': nome, 'matricula': matricula, 'nota': nota})  
+    return dados 
 
 #função para ordenar os alunos em ordem alfabética
 def ordenarNome(qtdAlunos):
