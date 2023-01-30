@@ -4,8 +4,10 @@ import os
 
 start = input('Digite sim para csv ou digite não para digitar o gabarito e respostas \n').lower()
 if start != 'sim':
-    gabarito = input('Digite o gabarito da prova: ').lower()
     qtdAlunos = int(input('Digite a quantidade de alunos: '))
+    while qtdAlunos == 0:
+        qtdAlunos = int(input('Digite uma quantidade de alunos maior que zero: '))
+    gabarito = input('Digite o gabarito da prova: ').lower()
     info = fn.infoAlunos(qtdAlunos, gabarito)
     loop = 'sim'
     while loop == 'sim':
@@ -39,6 +41,8 @@ if start != 'sim':
             
 else:
     qtdAlunos = int(input('Digite a quantidade de alunos: '))
+    while qtdAlunos == 0:
+        qtdAlunos = int(input('Digite uma quantidade de alunos maior que zero: '))
     info = fn.infoAlunosCSV()
     loop = 'sim'
     while loop == 'sim':
@@ -69,3 +73,4 @@ else:
         loop = input().lower()
         print('\n')
         if loop == 'sim':os.system('cls')
+    
