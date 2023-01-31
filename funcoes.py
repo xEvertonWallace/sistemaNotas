@@ -77,11 +77,22 @@ def percentualAprovacao(qtdAlunos):
 
 #função que apresenta a nota com maior frenquencia
 def maiorFrequencia(qtdAlunos):
-    ordem = list()
+    ordem = list()#cria uma lista com as notas dos alunos
     for i in range(qtdAlunos):
         nota = dados[i]['nota']
         ordem.append(nota)
-        res = max(set(ordem), key=ordem.count)#verifica as notas que mais se repetem e utiliza o metodo set para armazenar apenas uma dessas notas.
+    unicos = set(ordem)
+    aux = dict()
+    aux1 = list()
+    for i in unicos:
+        freq = ordem.count(i)# verifica a frequencia da nota
+        aux[i] = freq
+        aux1.append(freq)      
+    maiorFREQ = max(aux1)
+    res = list()
+    for j in aux:
+        if aux[j] == maiorFREQ:
+            res.append(j)#armazena as notas com as maiores frenquencias
     print("A nota com maior frequencia é: " + str(res))
 
 #função que apresenta a maior nota
