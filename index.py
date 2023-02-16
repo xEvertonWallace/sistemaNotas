@@ -91,6 +91,6 @@ while i <= 4:
             i+=1
             time.sleep(1)
             if True:os.system('cls') 
-
-print('Você ultrapassou o numero de tentativas, o sistema será desligado....')
+        if i > 4:
+            print('Você ultrapassou o numero de tentativas, o sistema será desligado....')
 time.sleep(2)
