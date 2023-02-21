@@ -62,7 +62,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   <tr>
     <td align="center">
       <a href="https://www.linkedin.com/in/everton-oliveira-b02a85150/">
-        <img src="perfilEverton.jfif" width="100px;" alt="Foto de Everton Oliveira"/><br>
+        <img src="img/perfilEverton.jfif" width="100px;" alt="Foto de Everton Oliveira"/><br>
         <sub>
           <b>Everton Oliveira - 25 anos, superior incompleto.</b>
         </sub>
@@ -74,7 +74,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   <tr>
     <td align="center">
       <a href="https://www.linkedin.com/in/luizesquivel/">
-        <img src="luiz.png" width="100px;" alt="Foto de Luiz Esquivel"/><br>
+        <img src="img/luiz.png" width="100px;" alt="Foto de Luiz Esquivel"/><br>
         <sub>
           <b>Luiz Esquivel - 20 anos, medio completo, analista de TI.</b>
         </sub>
