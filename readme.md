@@ -68,10 +68,6 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
         </sub>
       </a>
     </td>
-  </tr>
-</table>
-<table>
-  <tr>
     <td align="center">
       <a href="https://www.linkedin.com/in/luizesquivel/">
         <img src="img/luiz.png" width="100px;" alt="Foto de Luiz Esquivel"/><br>
