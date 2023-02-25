@@ -50,9 +50,9 @@ Para contribuir com o sistema de notas, siga estas etapas:
 Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 ## SUPORTE AO USUÁRIO:
-- Para se conectar, entre em contato via email ou whatsapp:
-    Wpp: +55 (71) 9 99125-6394 (também atende ligações).
-    Email: everton542@hotmail.com
+- Para se conectar, entre em contato via email ou whatsapp:<br>
+   &nbsp;Wpp: +55 (71) 9 99125-6394 (também atende ligações).<br>
+    &nbsp;Email: everton542@hotmail.com
 
 ## 🤝 Colaboradores:
 
